@@ -25,7 +25,7 @@ const AddCoffee = () => {
       photo,
     };
     console.log(newCoffee);
-    fetch("http://localhost:3000/addCoffee", {
+    fetch("https://coffee-server-ozxy.onrender.com/addCoffee", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -17,13 +17,15 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: () => fetch("http://localhost:3000/"),
+        loader: () => fetch("https://coffee-server-ozxy.onrender.com/"),
       },
       {
         path: "/coffeeDetails/:id",
         element: <CoffeeDetails />,
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/coffeeDetails/${params.id}`),
+          fetch(
+            `https://coffee-server-ozxy.onrender.com/coffeeDetails/${params.id}`
+          ),
       },
       {
         path: "/addCoffee",
@@ -33,7 +35,9 @@ const router = createBrowserRouter([
         path: "/coffeeUpdate/:id",
         element: <UpdateCoffee />,
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/coffeeDetails/${params.id}`),
+          fetch(
+            `https://coffee-server-ozxy.onrender.com/coffeeDetails/${params.id}`
+          ),
       },
     ],
   },
