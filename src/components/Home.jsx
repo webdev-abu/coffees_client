@@ -8,6 +8,7 @@ import SectionTitle from "./SectionTitle";
 import CoffeeCart from "./coffeeCart";
 import { VscCoffee } from "react-icons/vsc";
 import { Link, useLoaderData } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   const loadedCoffees = useLoaderData();
@@ -15,6 +16,9 @@ const Home = () => {
   // console.log(coffees);
   return (
     <>
+      <Helmet>
+        <title>Home | Coffees E-Shop</title>
+      </Helmet>
       <div className="bg-banner min-h-[calc(100vh-120px)] bg-cover bg-center relative">
         <div className="md:w-[724px] absolute md:left-[50%] top-[50%] md:-translate-x-[50%] lg:-translate-x-[100px] -translate-y-[50%] p-5 flex justify-center items-start flex-col gap-6">
           <h3 className="text-[26px] md:text-[55px] font-normal font-rancho text-[#FFFFFF]">
