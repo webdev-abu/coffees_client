@@ -17,14 +17,14 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
-        loader: () => fetch("https://coffee-server-ozxy.onrender.com/"),
+        loader: () => fetch("https://coffee-server-gghx.onrender.com"),
       },
       {
         path: "/coffeeDetails/:id",
         element: <CoffeeDetails />,
         loader: ({ params }) =>
           fetch(
-            `https://coffee-server-ozxy.onrender.com/coffeeDetails/${params.id}`
+            `https://coffee-server-gghx.onrender.com/coffeeDetails/${params.id}`
           ),
       },
       {
@@ -36,7 +36,7 @@ const router = createBrowserRouter([
         element: <UpdateCoffee />,
         loader: ({ params }) =>
           fetch(
-            `https://coffee-server-ozxy.onrender.com/coffeeDetails/${params.id}`
+            `https://coffee-server-gghx.onrender.com/coffeeDetails/${params.id}`
           ),
       },
     ],
@@ -48,3 +48,7 @@ createRoot(document.getElementById("root")).render(
     <RouterProvider router={router} />
   </StrictMode>
 );
+
+// https://heartfelt-hotteok-b0dd51.netlify.app
+// https://coffee-server-gghx.onrender.com
+// https://coffee-server-gghx.onrender.com/coffeeDetails/1

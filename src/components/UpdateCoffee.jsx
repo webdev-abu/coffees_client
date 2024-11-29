@@ -41,7 +41,7 @@ const UpdateCoffee = () => {
       price,
     };
     console.log(newCoffee);
-    fetch(`https://coffee-server-ozxy.onrender.com/updateCoffee/${_id}`, {
+    fetch(`https://coffee-server-gghx.onrender.com/updateCoffee/${_id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
